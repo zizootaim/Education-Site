@@ -1,0 +1,70 @@
+.apply__wrapper {
+  width: 100%;
+  background-image: url("../images/apply-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.apply__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.apply__text-item {
+  background-color: rgba(250, 250, 250, 0.15);
+  padding: 2rem;
+}
+.apply__text-item:first-child {
+  margin-bottom: 1rem;
+}
+.apply__text-item h2 {
+  color: var(--text-color);
+}
+.apply__text-item p {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+.apply__text-item:nth-child(2) .main-btn {
+  background-color: #f5a425;
+}
+
+.apply__col:nth-child(2) {
+  padding-top: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+.apply__about-item {
+  margin: 0.5rem 2rem;
+  position: relative;
+  padding: 0 1rem;
+  height: 2.5rem;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.apply__about-item:first-child {
+  height: 145px;
+}
+.apply__about-item .fas {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+}
+.apply__about-item .fas::before {
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+.apply__about-item .fas.open::before {
+  transform: rotate(90deg);
+  color: #a12c2f;
+}
+.apply__about-item p {
+  font-size: 0.9rem;
+  padding: 1rem;
+}

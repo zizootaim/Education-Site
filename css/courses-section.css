@@ -1,0 +1,95 @@
+.courses-swiper {
+  width: 96%;
+  margin: auto;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pagination {
+  position: absolute;
+  bottom: -2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 1rem;
+}
+.pagination .swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  display: inline-block;
+  width: 1rem;
+  border-radius: 0.1rem;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 10px;
+  padding: 30px;
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
+}
+.course {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 0.7rem;
+}
+
+.course-title {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(218, 216, 216);
+}
+.course-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.course-rank .fas {
+  color: #f5a425;
+  margin-left: 1rem;
+  transform: translateY(-1rem);
+}
+.course-price {
+  color: #a12c2f;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-right: 0.4rem;
+}

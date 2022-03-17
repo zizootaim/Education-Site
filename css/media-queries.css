@@ -1,0 +1,209 @@
+/* Media Using Max-Width */
+
+@media screen and (max-width: 1336px) {
+  .meetings__wrapper > div {
+    grid-template-columns: 1fr;
+  }
+  .categories {
+    width: 500px;
+    margin: auto;
+  }
+  .facts {
+    padding: 1rem;
+  }
+  .fact:nth-child(even) {
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  .nav__list {
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 6rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    height: 0;
+    padding: 0;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .show-menu .nav__list {
+    height: 340px;
+    overflow-y: visible;
+  }
+  .nav__list::-webkit-scrollbar {
+    display: none;
+  }
+  .show-menu .menu-btn .open-btn {
+    opacity: 0;
+  }
+  .show-menu .menu-btn .close-btn {
+    opacity: 1;
+  }
+  .nav__list li {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.5px solid rgb(204, 202, 202);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .nav__list > li:hover {
+    background-color: rgb(238, 237, 237);
+  }
+  .nav__list li:last-child {
+    margin: 0;
+    border-bottom: 0;
+  }
+  .nav__list li::before{
+    background-color: #f5a425;
+  }
+  .nav__list li a {
+    color: #000;
+  }
+  .nav__list li:hover a {
+    color: #f5a425;
+  }
+  .pages-menu {
+    position: unset;
+    width: 100%;
+  }
+  .pages-link.show-menu .pages-menu {
+    height: 112px;
+    margin-top: 1rem;
+  }
+  .pages-menu li {
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .categories {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  h4 {
+    font-size: 1.1rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .home__text div {
+    font-size: 0.8rem;
+  }
+  .sec-title {
+    font-size: 1.2rem;
+  }
+  .nav .logo-text {
+    font-size: 1.3rem;
+  }
+  .main-btn {
+    font-size: 1rem;
+  }
+  .nav__list {
+    right: 1%;
+    left: 1%;
+  }
+  .services__slider {
+    max-width: 100%;
+  }
+  .services__wrapper .prev-btn {
+    left: 0;
+  }
+  .services__wrapper .next-btn {
+    right: 0;
+  }
+  .meetings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .apply__text-item {
+    margin: 1rem 0;
+  }
+  .apply__wrapper {
+    padding: 0.5rem;
+  }
+  .apply__about-item {
+    margin: 1rem;
+    padding: 0;
+  }
+  .apply__about-item p {
+    padding: 0.5rem;
+  }
+  .contact__form {
+    padding: 1rem;
+  }
+
+  .facts-title{
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .facts__wrapper > div{
+    width: 100%;
+  }
+  .contact__wrapper{
+    padding: .5rem;
+  }
+
+}
+
+/* Media Using Min-Width */
+
+@media screen and (min-width: 700px) {
+  .service {
+    min-width: 50%;
+  }
+  .courses-swiper {
+    width: 80%;
+    margin: auto;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .home__text div {
+    min-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .home__text div {
+    width: 60%;
+  }
+  .service {
+    min-width: 32.7%;
+  }
+  .meetings__wrapper {
+    width: 90%;
+  }
+  .apply__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
+
+@media screen and (min-width: 1275px) {
+  .home__video {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .cards__wrapper {
+    gap: 1.2rem;
+  }
+}

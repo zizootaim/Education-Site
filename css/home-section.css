@@ -1,0 +1,169 @@
+#home {
+  height: 100vh;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+}
+.nav .logo-text {
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-top: 0.3rem;
+  color: var(--text-color);
+  letter-spacing: 0.1rem;
+}
+.nav__menu {
+  height: 100%;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.nav__list li {
+  position: relative;
+  margin: 0 1rem;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.nav__list > li:last-child {
+  margin: 0.5rem 0;
+}
+.nav__list li::before{
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: .2rem;
+  background-color: #fff;
+  transition: .4s ease-in-out;
+}
+.nav__list li.active::before{
+  width: 100%;
+}
+.pages-link {
+  position: relative;
+}
+.pages-link .fas {
+  transform: translateY(-0.9rem);
+  font-size: 1.2rem;
+  margin-left: 0.1rem;
+}
+.pages-menu {
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.pages-menu li {
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+  background-color: rgb(250, 250, 250);
+  transition: 0.3s;
+}
+.pages-menu li:last-child {
+  border-bottom: 0;
+}
+.pages-link.show-menu .pages-menu {
+  height: 102px;
+}
+.pages-menu li:hover {
+  padding-left: 1rem;
+  background-color: #fff;
+  color: #f5a425;
+}
+.menu-btn {
+  position: absolute;
+  top: 1%;
+  bottom: 1%;
+  right: 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+.menu-btn .close-btn {
+  opacity: 0;
+}
+.menu-btn .open-btn {
+  opacity: 1;
+}
+
+.scrolling-nav {
+  background-color: #fff;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+.scrolling-nav .logo-text,
+.scrolling-nav .menu-btn {
+  color: #000;
+}
+.scrolling-nav .nav__list .main-link {
+  color: #000;
+}
+.scrolling-nav .nav__list li::before{
+  background-color: #f5a425;
+}
+
+.home__content {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.home__body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+.home__body .home__text {
+  width: 80%;
+}
+.home__text h4 {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+.home__text h2 {
+  color: var(--text-color);
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  padding: 0.5rem 0;
+  font-size: 1.6rem;
+}
+
+.home__text div {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.home__text .main-link {
+  margin: 0;
+  font-size: 1rem;
+  color: rgb(102, 236, 236);
+}
+.home__text .main-btn {
+  margin: 1.7rem 0;
+}

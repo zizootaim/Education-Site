@@ -1,0 +1,77 @@
+.contact__wrapper {
+  padding: 4rem;
+}
+.contact__form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form h3 {
+  width: 100%;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(204, 202, 202);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__controls {
+  margin: 1rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+
+.form input {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  outline: none;
+  background-color: #f7f7f7;
+  border-radius: 1rem;
+}
+.form input::placeholder {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.form span {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 0.6rem;
+  color: rgb(134, 131, 131);
+}
+.form textarea {
+  width: 100%;
+  background-color: #f7f7f7;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding: 0.7rem;
+}
+.contact__form .main-btn {
+  margin-top: 1rem;
+  width: 15rem;
+}
+
+.contact__data {
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--surface-color);
+  margin: 2rem 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact__item h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.contact__item span {
+  font-weight: 600;
+}
