@@ -18,7 +18,7 @@ This template contains a navbar with active links of sections, sliders ,submenu,
 
 ### Links
 
-- Live Site URL: ()
+- Live Site URL: (https://edu-site-z.netlify.app/)
 - Design URL: (https://templatemo.com/tm-569-edu-meeting)
 
 ## My process
